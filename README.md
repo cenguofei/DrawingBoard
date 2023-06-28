@@ -3,8 +3,8 @@
 ---
 ## 界面展示
 - Screenshot
-| ![Untitled](https://github.com/cenguofei/DrawingBoard/assets/72325667/0213cc7f-9871-4635-8809-e94501925cf6)    | ![Untitled1](https://github.com/cenguofei/DrawingBoard/assets/72325667/17d3aa5f-7fd4-41d4-9b21-487a6dd9e60e)    | ![Untitled2](https://github.com/cenguofei/DrawingBoard/assets/72325667/9442009a-a59e-4843-a22e-c57db0b4f8fd)    |
+| ![Untitled](https://github.com/cenguofei/DrawingBoard/assets/72325667/0213cc7f-9871-4635-8809-e94501925cf6)   | ![Untitled1](https://github.com/cenguofei/DrawingBoard/assets/72325667/17d3aa5f-7fd4-41d4-9b21-487a6dd9e60e)    | ![Untitled2](https://github.com/cenguofei/DrawingBoard/assets/72325667/9442009a-a59e-4843-a22e-c57db0b4f8fd)    |
 | ---- | ---- | ---- |
 
 - Video
-<video src="[视频链接](https://github.com/cenguofei/DrawingBoard/assets/72325667/f447d9d3-4e8f-46a3-bfcc-028afaa83a07)https://github.com/cenguofei/DrawingBoard/assets/72325667/f447d9d3-4e8f-46a3-bfcc-028afaa83a07"></video>
+<video src="https://github.com/cenguofei/DrawingBoard/assets/72325667/f447d9d3-4e8f-46a3-bfcc-028afaa83a07"></video>
