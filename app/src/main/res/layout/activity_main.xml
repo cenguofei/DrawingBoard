@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mContainer">
+
+    <com.example.drawingboard.DrawView
+        android:id="@+id/drawView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/operation_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/brushSizeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/primary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/operation_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:tag="10"
+            android:id="@+id/size1Btn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/size2Btn"
+            app:layout_constraintEnd_toStartOf="@+id/size2Btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/size2Btn"
+            app:srcCompat="@drawable/circle"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:tag="20"
+            android:id="@+id/size2Btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/size3Btn"
+            app:layout_constraintEnd_toStartOf="@+id/size3Btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/size1Btn"
+            app:layout_constraintTop_toTopOf="@+id/size3Btn"
+            app:srcCompat="@drawable/circle"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:tag="30"
+            android:id="@+id/size3Btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/size4Btn"
+            app:layout_constraintEnd_toStartOf="@+id/size4Btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/size2Btn"
+            app:layout_constraintTop_toTopOf="@+id/size4Btn"
+            app:srcCompat="@drawable/circle"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:tag="40"
+            android:id="@+id/size4Btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/size3Btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/operation_container"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/picImageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/savaImageBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/savaImageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/undoImageBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/picImageBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/download" />
+
+        <ImageView
+            android:id="@+id/undoImageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/brushImageBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/savaImageBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/undo" />
+
+        <ImageView
+            android:id="@+id/brushImageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/eraserImageBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/undoImageBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/brush" />
+
+        <ImageView
+            android:id="@+id/eraserImageBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/brushImageBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/painter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/colorBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/brushSizeContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/palette" />
+
+    <ImageView
+        android:id="@+id/blueBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="@+id/colorBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/colorBtn"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue"
+        android:tag="@color/blue"/>
+
+    <ImageView
+        android:id="@+id/pinkBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="@+id/colorBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorBtn"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/pink"
+        android:tag="@color/pink" />
+
+    <ImageView
+        android:id="@+id/purpleBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="@+id/colorBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorBtn"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/purple"
+        android:tag="@color/purple" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingColorButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="@+id/colorBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorBtn"
+        app:srcCompat="@drawable/palette"
+        android:focusable="true"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/orangeBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="@+id/colorBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorBtn"
+        app:srcCompat="@drawable/circle"
+        android:tag="@color/orange"
+        app:tint="@color/orange" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
