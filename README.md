@@ -1,6 +1,8 @@
 # DrawingBoard
 这是一个简单的画板app，能选择画笔的粗细和颜色，有撤销操作，还能保存并分享。
 ---
+## [Notion笔记地址](https://longing-begonia-b5a.notion.site/demo-3c12af7d770e496f9c9b6c29fa975c48)
+
 ## 界面展示
 - Screenshot
 
