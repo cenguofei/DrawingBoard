@@ -9,7 +9,7 @@
 | ![Untitled](https://github.com/cenguofei/DrawingBoard/assets/72325667/0213cc7f-9871-4635-8809-e94501925cf6)   | ![Untitled1](https://github.com/cenguofei/DrawingBoard/assets/72325667/17d3aa5f-7fd4-41d4-9b21-487a6dd9e60e)    |
 | ---- | ---- |
 
-![Untitled2](https://github.com/cenguofei/DrawingBoard/assets/72325667/9442009a-a59e-4843-a22e-c57db0b4f8fd)
+![Snipaste_2023-07-11_20-55-42](https://github.com/cenguofei/DrawingBoard/assets/72325667/829408e6-4f35-4db5-b920-ae2545ff64a8)
 
 - Video
 
